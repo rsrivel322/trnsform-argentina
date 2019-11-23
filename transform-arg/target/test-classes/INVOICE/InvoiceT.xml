@@ -1,0 +1,100 @@
+<DTE>
+	<Documento>
+		<Cabecera>
+			<TipoRegistro>1</TipoRegistro> <!--  -->
+			<CUITInformante>##-12345678-X</CUITInformante> <!-- Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+			<Periodo>201703</Periodo> <!-- Invoice/cbc:IssueDate  -->
+			<Secuencia>00</Secuencia> <!--  -->
+			<CodImpuesto>103</CodImpuesto> <!--Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID  -->
+			<CodConcepto>858</CodConcepto> <!-- Invoice/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:TaxExemptionReasonCode -->
+			<NumFormulario>8089</NumFormulario> <!-- Invoice/cbc:ID/@schemeID -->
+			<VersionSistema>100</VersionSistema> <!-- Invoice/cbc:ID/@esquemaVersiónID -->
+			<PresentSinMovimiento>0</PresentSinMovimiento> <!--  -->
+		</Cabecera>
+		<DatosComprobante>
+			<TipoRegistroComprobante>2</TipoRegistroComprobante> <!--  -->
+			<TipoComprobante>1</TipoComprobante> <!-- Invoice/cbc:InvoiceTypeCode -->
+			<PuntoVenta>12345</PuntoVenta> <!-- Invoice/cac:AccountingSupplierParty/cac:Party/cac: PhysicalLocation/cbc: ID -->
+			<NumeroComprobante>1</NumeroComprobante> <!-- Invoice/cbc: ID -->
+			<FechaEmision>201708013</FechaEmision> <!-- Invoice/cbc:IssueDate -->
+			<CodDocReceptor>80</CodDocReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID -->
+			<NumDocReceptor>08. 5. 0. 1. 04</NumDocReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+			<PaisReceptor>200</PaisReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode-->
+			<IDImpositivoReceptor>1</IDImpositivoReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:TaxLevelCode -->
+			<RelacionEmisRecep>1</RelacionEmisRecep> <!--  -->
+			<ImporteGravado>1000.00</ImporteGravado> <!-- Invoice/cac:TaxTotal/cbc:TaxAmount -->
+			<ImporteNoGravado>20.00</ImporteNoGravado> <!-- Invoice/cac:TaxTotal/cbc:TaxAmount -->
+			<ImporteExento>15.00</ImporteExento> <!-- Invoice/cac:TaxTotal/cbc:TaxAmount -->
+			<ImporteReintegro>21.00</ImporteReintegro> <!-- Invoice/cac:TaxTotal/cbc:TaxAmount -->
+			<CodMoneda>PES</CodMoneda> <!-- Invoice/cbc:PaymentCurrencyCode -->
+			<CotizacionMoneda>2.00</CotizacionMoneda> <!-- Invoice/cac:TaxExchangeRate/cbc:TargetCurrencyBaseRate -->
+			<TipoCodAutorizacion>CAI</TipoCodAutorizacion> <!--  -->
+			<CodAutorizacion>r567</CodAutorizacion> <!--  -->
+			<CodControladorFiscal>F3e88</CodControladorFiscal> <!--  -->
+			<SerieControladorFiscal>S57CF</SerieControladorFiscal> <!--  -->
+			<ImporteTotal>1200.00</ImporteTotal> <!-- Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount  -->
+		</DatosComprobante>
+		<SubTotalIVA>
+			<TipoRegistroIVA>3</TipoRegistroIVA> <!--  -->
+			<PorcentajeIVA>10</PorcentajeIVA> <!-- Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:Percent -->
+			<BaseImponible>210.00</BaseImponible> <!-- Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount -->
+			<Importe>1210.00</Importe> <!-- Invoice/cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount -->
+		</SubTotalIVA>	
+		<DatosTurista>
+			<TipoRegistroTurista>4</TipoRegistroTurista> <!--  -->
+			<TipoDocUsuario>91</TipoDocUsuario> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeName -->
+			<NumDocUsuario>09. 3. 0. 1. 12</NumDocUsuario> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+			<PaisEmisorDoc>222</PaisEmisorDoc> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode -->
+			<ApellidoYNombre>Julio Torres Leiva</ApellidoYNombre> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:Person/cbc:FirstName  &&  Invoice/cac:AccountingCustomerParty/cac:Party/cac:Person/cbc:FamilyName -->
+			<PaisNacionalidad>222</PaisNacionalidad> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:Person/cbc:NationalityID -->
+			<PaisResidencia>222</PaisResidencia> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:Person/cac:ResidenceAddress/cac:Country/cbc:IdentificationCode -->
+		</DatosTurista>
+		<DatosReintegro>
+			<TipoRegistroReintegro>5</TipoRegistroReintegro> <!--  -->
+			<CUITEmisoraReintegro>##-87654321-X</CUITEmisoraReintegro> <!-- Invoice/cac:BillingReference/cac:CreditNoteDocumentReference/cac:IssuerParty/cac:PartyIdentification/cbc:ID -->
+			<TipoComprobante>1</TipoComprobante> <!-- Invoice/cac:BillingReference/cac:CreditNoteDocumentReference/cbc:DocumentTypeCode -->
+			<PuntoVenta>1234</PuntoVenta> <!-- Invoice/cac:BillingReference/cac:CreditNoteDocumentReference/cac:IssuerParty/cac:PhysicalLocation/cbc:ID -->
+			<NumComprobante>1555</NumComprobante> <!-- Invoice/cac:BillingReference/cac:CreditNoteDocumentReference/cbc:ID -->
+			<TipoCodAutorizacion>CAI</TipoCodAutorizacion> <!--  -->
+			<CodAutorizacion>c788</CodAutorizacion> <!--  -->
+			<FechaComprobante>20170822</FechaComprobante> <!-- Invoice/cac:BillingReference/cac:CreditNoteDocumentReference/cbc:IssueDate -->
+			<ControladorFiscalCod>CF777</ControladorFiscalCod> <!--  -->
+			<ControladorFiscalSerie>SF233</ControladorFiscalSerie> <!--  -->
+			<Importe>222.50</Importe> <!--  -->
+		</DatosReintegro>
+		<DatosComprobanteAsociado>
+			<TipoRegistroComprobanteAsociado>6</TipoRegistroComprobanteAsociado> <!--  -->
+			<CodComprobanteAsociado>1</CodComprobanteAsociado> <!-- Invoice/cac:AdditionalDocumentReference/cbc:DocumentTypeCode/cbc:ID --> 
+			<PuntoVentaComprobanteAsociado>2267</PuntoVentaComprobanteAsociado> <!-- Invoice/cac:AdditionalDocumentReference/cac:IssuerParty/cac:PhysicalLocation/cbc:ID -->
+			<NumComprobanteAsociado>19282</NumComprobanteAsociado> <!-- Invoice/cac:AdditionalDocumentReference/cbc:ID -->
+		</DatosComprobanteAsociado>
+		<DatosItem>
+			<TipoRegistroItem>7</TipoRegistroItem> <!--  -->
+			<TipoItem>0</TipoItem> <!-- Invoice/cac:InvoiceLine/cbc:ID/@esquemaID -->
+			<CodItemTurismo>1</CodItemTurismo> <!-- Invoice/cac:InvoiceLine/cbc:ID -->
+			<CodProductoServicio>P214</CodProductoServicio> <!-- Invoice/cac:InvoiceLine/cac:Item/cac:AdditionalItemIdentification/cbc:ID -->
+			<CUITAlojamientoServicio>##-13243546-X</CUITAlojamientoServicio> <!-- Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+			<FechaIngreso>20072017</FechaIngreso> <!-- Invoice/cac:InvoiceLine/cbc:TaxPointDate -->
+			<Unidad>2</Unidad> <!-- "Invoice/cac:InvoiceLine/cbc:InvoicedQuantity
+" -->
+			<TipoUnidad>1</TipoUnidad> <!-- Invoice/cac:InvoiceLine/cbc:InvoicedQuantity/@unitCode -->
+			<CantPersonas>12</CantPersonas> <!-- Invoice/cac:InvoiceLine/cac:Item/cbc: PackSizeNumeric -->
+			<DescripcionProductoServicio>Servicio de hostal</DescripcionProductoServicio> <!-- Invoice/cac:InvoiceLine/cac:Item/cbc:Description -->
+			<CantidadNoches>3</CantidadNoches> <!-- "Invoice/cac:InvoiceLine/cac:Item/cbc: PackQuantity
+" -->
+			<PrecioUnitario>60.00</PrecioUnitario> <!-- Invoice/cac:InvoiceLine/cac:Price/cbc:PriceAmount -->
+			<CodCondicionIVA>10</CodCondicionIVA> <!-- Invoice/cac:InvoiceLine/cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:ID -->
+			<ImporteIVA>12.60</ImporteIVA> <!-- Invoice/cac:InvoiceLine/cac:TaxTotal/cbc:TaxAmount -->
+			<ImporteTotalItem>72.60</ImporteTotalItem> <!-- Invoice/cac:InvoiceLine/cac:LegalMonetaryTotal -->	
+		</DatosItem>
+		<FormaPago>
+			<TipoRegistroFormaPago>8</TipoRegistroFormaPago> <!--  -->
+			<TipoFormaPago>1</TipoFormaPago> <!-- Invoice/cac:PaymentMeans/cbc:PaymentMeansCode -->
+			<SwiftCodeEntidadBancaria>324420331212</SwiftCodeEntidadBancaria> <!-- Invoice/cac:PaymentMeans/cac:CardAccount/cbc:IssuerID -->
+			<TipoCuenta>2</TipoCuenta> <!-- Invoice/cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode -->
+			<NumTarjetaCreditoExtranjero>5444234227276780</NumTarjetaCreditoExtranjero> <!-- Invoice/cac:paymentMeans/cac:CardAccount/cbc:PrimaryAccountNumberID -->
+			<NumCuentaExtranjero>123456789102</NumCuentaExtranjero> <!-- Invoice/cac:PaymentMeans/cac:PayerFinancialAccount/cbc:ID -->
+			<ImportePago>672.00</ImportePago> <!-- Invoice/cac:LegalMonetaryTotal/cbc:PayableAmount  -->
+		</FormaPago>
+	</Documento>
+</DTE>

@@ -1,0 +1,53 @@
+<Comprobantes>
+	<Comprobante>
+		<Tipo>19</Tipo>  <!-- Invoice/cbc:InvoiceTypeCode -->
+		<PtoVta>1303</PtoVta> <!-- Invoice/cac:AccountingSupplierParty/cac:Party/cac: PhysicalLocation/cbc: ID -->
+		<CuitEmisor>##-12345678-X</CuitEmisor> <!-- Invoice/cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+		<FechaEmision>02/11/2019</FechaEmision> <!-- Invoice/cbc:issueDate -->
+		<Idioma>01</Idioma> <!-- Invoice/cac:DespatchDocumentReference/cbc:LanguageID -->
+		<Concepto>01</Concepto> <!-- Invoice/SupplierParty/cac:Party/cac:ServiceProviderParty/cbc:ServiceTypeCode -->
+		<Ape>S</Ape> <!--  -->
+		<Moneda>PES</Moneda> <!-- Invoice/cbc:DocumentCurrencyCode -->
+		<TipoCambio>1</TipoCambio> <!-- cac:PaymentAlternativeExchangeRate/cbc:ExchangeMarketID -->
+		<DestinoCmp>200</DestinoCmp> <!-- Invoice/cac:Delivery/cac:DeliveryLocation/cac:Address/cac:Country -->
+		<TipoDocReceptor>1</TipoDocReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID -->
+		<NroDocReceptor>##-87654321-X</NroDocReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID -->
+		<IdImpositivoReceptor>1</IdImpositivoReceptor> <!-- Invoice/cac: AccountingCustomerParty/cbc: AdditionalAccountID -->
+		<Receptor>Pérez Julio</Receptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac: PartyName  -->
+		<DomicilioReceptor>Av. Siempre viva 1324, Buenos Aires</DomicilioReceptor> <!-- Invoice/cac:AccountingCustomerParty/cac:Party/cac:PostalAddress/cbc:StreetName -->
+		<ImporteTotal>1300.00</ImporteTotal> <!-- Invoice/cac:LegalMonetaryTotal/cbc:PayableAmountt -->
+		<FormasPago>
+			<FormaPago>
+				<Codigo>99</Codigo> <!-- Invoice/cac:PaymentMeans/cbc:PaymentMeansCode -->
+				<Descripcion>Efectivo</Descripcion> <!-- Invoice/cac:PaymentMeans/cbc:InstructionNote -->
+			</FormaPago>
+		</FormasPago>
+		<IncoTerms>CFR</IncoTerms> <!-- Invoice/cac:Delivery/cac:Shipment/cac:Delivery/cac:DeliveryTerms/cbc:ID -->
+		<DetalleIncoterms>Coste y Flete</DetalleIncoterms> <!-- Invoice/cac:Delivery/cac:Shipment/cac:Delivery/cac:DeliveryTerms/cbc:SpecialTerms -->
+		<OtrosDatosComerciales>Otros datos comerciales</OtrosDatosComerciales> <!-- Invoice/cac:Delivery/cac:Shipment/cbc:Information -->
+		<PermisosDestinos>
+			<PermisoDestino>
+				<PermisoEmb>99999AAAA999999A</PermisoEmb> <!-- Invoice/cac:Delivery/cac:DeliveryTerms/cbc: ID -->
+				<Destino>222</Destino> <!-- Invoice/cac:Delivery/cac:DeliveryTerms/cac:DeliveryLocation/cac:Address/cac:Country -->
+			</PermisoDestino>
+		</PermisosDestinos>
+		<CmpAsociados>
+			<CmpAsociados>
+				<TipoAsoc>1</TipoAsoc> <!-- Invoice/cac:AdditionalDocumentReference/cbc:DocumentTypeCode -->
+				<PtoVtaAsoc>12</PtoVtaAsoc> <!-- Invoice/cac:AdditionalDocumentReference/cac:IssuerParty/cac:PhysicalLocation/cbc:ID -->
+				<NroAsoc>12</NroAsoc> <!-- Invoice/cac:AdditionalDocumentReference/cbc:ID -->
+			</CmpAsociados>
+		</CmpAsociados>
+		<Detalles>
+			<Detalle>
+				<Cod>02C1</Cod> <!-- Invoice/cac:InvoiceLine/cbc:ID -->
+				<Desc>Smartphone con cámara alta definición</Desc> <!-- Invoice/cac:InvoiceLine/cac:Item/cbc:Description -->
+				<Unimed>99</Unimed> <!-- Invoice/cac:InvoiceLine/cac:Item/cac:Dimension/cbc:Measure/@unitcode -->
+				<Cant>1.20</Cant> <!-- Invoice/cac:InvoiceLine/cbc:InvoicedQuantity -->
+				<PrecioUnit>12.00</PrecioUnit> <!-- Invoice/cac:InvoiceLine/cac:Price/cbc:PriceAmount -->
+				<Importe>14.40</Importe> <!-- Invoice/cac:InvoiceLine/cbc:lineExtensionAmount -->
+			</Detalle>
+		</Detalles>
+		<OtrosDatosGenerales>Comprobante fue emitido satisfactoriamente</OtrosDatosGenerales> <!-- Invoice/cbc:Note -->
+	</Comprobante>
+</Comprobantes>
